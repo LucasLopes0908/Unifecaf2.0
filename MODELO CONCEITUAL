@@ -1,0 +1,14 @@
+Aluno (id_aluno, nome, cpf, data_nascimento)
+Professor (id_professor, nome, formacao)
+Curso (id_curso, nome, duracao)
+Disciplina (id_disciplina, nome, carga_horaria, id_curso)
+Turma (id_turma, id_disciplina, id_professor, semestre)
+Matricula (id_matricula, id_aluno, id_turma)
+Nota (id_nota, id_matricula, nota, frequencia)
+
+Relacionamentos:
+Um curso possui várias disciplinas;
+Uma disciplina pode ter várias turmas;
+Um professor pode ministrar várias turmas;
+Um aluno pode se matricular em várias turmas (via matrícula);
+Cada matrícula pode ter uma nota associada.
